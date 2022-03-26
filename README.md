@@ -20,20 +20,29 @@ This model is then compared to an Azure AutoML run.
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
-**What are the benefits of the parameter sampler you chose?**
+### Benefits of the parameter sampler - Random sampling
 
-**What are the benefits of the early stopping policy you chose?**
+- It supports discrete and continuous hyperparameters.
+- It supports early termination of low-performance runs.
+- Hyperparameter values are randomly selected from the defined search space.
+
+### Benefits of the early stopping policy - Bandit policy
+
+- Automatically end poorly performing runs with an early termination policy. Early termination improves computational efficiency.
+- It is based on slack factor and evaluation interval. It ends runs when the primary metric isn't within the specified slack factor of the most successful run.
 
 ## AutoML
 
-Process contains following steps :
+It contains following steps :
 
-- Features generation : generating features for the dataset.
+- Features Generation : generating features for the dataset.
 - Dataset Featurization : beginning to fit featurizers and featurize the dataset.
 - Dataset Balancing : performing class balancing sweeping.
 - Dataset Cross Validation Split : generating individually featurized CV splits.
 - Model Selection : beginning model selection.
-- 32 different models have been used
+- 32 different models have been used.
+- Class balancing detection : imbalanced data.
+- Hyperparameters tuning is done automatically.
 
 Image of AutoML models
 
