@@ -36,6 +36,7 @@ This model is then compared to an Azure AutoML run.
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
 ## Proof of cluster clean up
-**Image of cluster marked for deletion**
+ 
+- Image of cluster marked for deletion
 
 ![Cluster_Delete](images/Cluster_Delete.JPG)
