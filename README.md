@@ -1,6 +1,6 @@
 # Optimizing an ML Pipeline in Azure
 
-![All Runs](images/All_Runs.jpg)
+![All Runs](images/All_Runs.JPG)
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
