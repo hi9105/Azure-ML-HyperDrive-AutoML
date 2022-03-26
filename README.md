@@ -18,7 +18,24 @@ This model is then compared to an Azure AutoML run.
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
 ## Scikit-learn Pipeline
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+
+### Pipeline architecture
+
+- Data was fetched from a url using TabularDatasetFactory class which create a tabular dataset for Azure Machine Learning.
+- Data was cleaned and One hot encoding was done (converting categorical data variables so they can be provided to machine learning algorithms to improve predictions).
+- Data was splitted into train and test subsets with ratio 80/20 (train/test).
+- Data was passed to Logistic Regression classifier for training on train dataset and predicting on test dataset. Hyperparameters (control the model training process) are defined. Model performance depends heavily on hyperparameters.
+- Hyperparameters used are C (inverse regularization) and max_iter (maximum number of iterations).
+- Automate efficient hyperparameter tuning by using Azure Machine Learning HyperDrive package. Hyperparameter tuning (hyperparameter optimization) was done to find the configuration of hyperparameters that results in the best performance.
+
+Hyperparameter tuning includes following steps :
+- Parameter search space is defined.
+- Primary metric is specified to optimize.
+- Early termination policy is specified for low-performing runs.
+- Creating and assigning resources.
+- Launching an experiment with the defined configuration.
+- Visualizing the training runs.
+- Selecting the best configuration for model.
 
 ### Benefits of the parameter sampler - Random sampling
 
