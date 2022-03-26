@@ -61,6 +61,10 @@ Image of AutoML models
 
 ![Automl_Models](images/Automl_Models.JPG)
 
+Image of AutoML metrics
+
+![Automl_Metrics](images/Automl_Metrics.JPG)
+
 ## Pipeline comparison
 
 - In HyperDrive, accuracy is 0.908. In AutoML, accuracy is 0.91669.
