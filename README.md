@@ -46,6 +46,17 @@ Hyperparameter tuning includes following steps :
 
 ## AutoML
 
+### Model and hyperparameters generated
+
+AutoMLConfig represents configuration for submitting an automated ML experiment in Azure Machine Learning. This configuration object contains and persists the parameters for configuring the experiment run, as well as the training data to be used at run time. We have used following parameters :
+
+   - task : task needs to be performed - classification.
+   - primary_metric : the evaluation metric for the models - accuracy.
+   - experiment_timeout_minutes : the time after which autoML will stop - 30 minutes.
+   - training_data : the data on which we need to do training.
+   - label_column_name : the column name in the training data which is the output label.
+   - n_cross_validations : n-fold cross validations needed to perform in each model - 3.
+
 It contains following steps :
 
 - Features Generation : generating features for the dataset.
