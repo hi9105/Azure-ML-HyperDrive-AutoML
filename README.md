@@ -29,9 +29,9 @@ This model is then compared to an Azure AutoML run.
 - Automate efficient hyperparameter tuning by using Azure Machine Learning HyperDrive package. Hyperparameter tuning (hyperparameter optimization) was done to find the configuration of hyperparameters that results in the best performance.
 
 Hyperparameter tuning includes following steps :
-- Parameter search space is defined.
-- Primary metric is specified to optimize.
-- Early termination policy is specified for low-performing runs.
+- Parameter search space is defined using 'Random sampling'.
+- Primary metric 'Accuracy' is specified to optimize.
+- Early termination policy 'Bandit policy' is specified for low-performing runs.
 - Creating and assigning resources.
 - Launching an experiment with the defined configuration.
 - Visualizing the training runs.
