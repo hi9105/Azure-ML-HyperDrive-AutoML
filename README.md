@@ -37,4 +37,5 @@ This model is then compared to an Azure AutoML run.
 
 ## Proof of cluster clean up
 **Image of cluster marked for deletion**
+
 ![Cluster_Delete](images/Cluster_Delete.JPG)
