@@ -8,8 +8,9 @@ Hyperparameters of Scikit-learn model is tuned by using Azure Machine Learning H
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
 
+- This dataset contains data about a bank's customers. It contains information like age, job, education, loan, contact, etc.
+- We seek to predict that if a customer is interested to subscribe for the bank term deposit scheme.
 - The best performing model was a 'Voting ensemble' with accuracy of 0.92 which was achieved using Automated machine learning (AutoML).
 
 ## Scikit-learn Pipeline
