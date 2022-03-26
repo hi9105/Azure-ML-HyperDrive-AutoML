@@ -33,7 +33,10 @@ This model is then compared to an Azure AutoML run.
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
 ## Future work
-**What are some areas of improvement for future experiments? Why might these improvements help the model?**
+
+- With HyperDrive, we have used only two parameters : (C, max_iter). For future experiments, areas of improvement can be to use other parameters like : (penalty, dual, tol, fit_intercept, intercept_scaling, class_weight, solver, multi_class, warm_start, l1_ratio). May be these improvements might help the model performance. 
+
+- With HyperDrive, we have used model 'LogisticRegression'. For future experiments, areas of improvement can be to use other models. May be these improvements might help improving the performance.
 
 ## Proof of cluster clean up
  
