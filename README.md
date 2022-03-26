@@ -3,6 +3,7 @@
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
 In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
+Hyperparameters of Scikit-learn model is tuned by using Azure Machine Learning HyperDrive package.
 This model is then compared to an Azure AutoML run.
 
 ## Useful Resources
